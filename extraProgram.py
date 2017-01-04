@@ -10,7 +10,7 @@ def process_4B():
     using a menu-driven interface
     '''
     
-    print("Hello, Bhagwant! Let's study for the 4B. The following is a list of topics for the 4B Exam: \n")
+    print("Hello, let's study for the 4B exam! The following is a list of topics for the 4B Exam: \n")
     
     questionList = open("4B Q ORIGINAL.txt", encoding = "utf-8").read().splitlines()
     questionList = [list(x[1]) for x in itertools.groupby(questionList, lambda x: x=='//') if not x[0]]
